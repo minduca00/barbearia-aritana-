@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barbearia Aritana - Cortes masculinos, barba e experiência de atendimento em Imbiribeira, Recife - PE. Agende seu horário pelo WhatsApp.">
+    <title>Barbearia Aritana | Cortes Masculinos em Recife - PE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ===== PRELOADER ===== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">
+            <img src="images/logo.png" alt="Barbearia Aritana" class="preloader-img">
+        </div>
+        <div class="preloader-bar">
+            <div class="preloader-bar-fill"></div>
+        </div>
+        <p class="preloader-text">Carregando experiência...</p>
+    </div>
+
+    <!-- ===== SCROLL PROGRESS ===== -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="images/logo.png" alt="Barbearia Aritana" class="nav-logo-img">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#equipe" class="nav-link">Equipe</a></li>
+                <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+                <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                <li><a href="#localizacao" class="nav-link">Localização</a></li>
+                <li>
+                    <a href="https://wa.me/558185542742?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Aritana." 
+                       target="_blank" rel="noopener" class="btn btn-gold btn-nav">
+                        <i class="fab fa-whatsapp"></i> Agendar
+                    </a>
+                </li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <header class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="hero-pattern"></div>
+            <div class="hero-particles" id="heroParticles"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-logo reveal">
+                    <img src="images/logo.png" alt="Logo Barbearia Aritana" class="hero-logo-img">
+                </div>
+                <div class="hero-badge reveal">
+                    <span class="badge-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </span>
+                    <span class="badge-text">4,9 estrelas no Google</span>
+                </div>
+                <h1 class="hero-title reveal">Seu estilo,<br><span class="text-gold">nossa experiência.</span></h1>
+                <p class="hero-subtitle reveal">
+                    Na Barbearia Aritana você encontra cortes masculinos, barba e atendimento personalizado 
+                    em um ambiente confortável e descontraído em Recife.
+                </p>
+                <div class="hero-actions reveal">
+                    <a href="https://wa.me/558185542742?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Aritana." 
+                       target="_blank" rel="noopener" class="btn btn-gold btn-lg">
+                        <i class="fab fa-whatsapp"></i> Agendar Horário
+                    </a>
+                    <a href="#sobre" class="btn btn-outline btn-lg">Conheça a Barbearia</a>
+                </div>
+                <div class="hero-features reveal">
+                    <div class="hero-feature">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Imbiribeira - Recife</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-cut"></i>
+                        <span>Profissionais especializados</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-clock"></i>
+                        <span>ter - Sex: 09:00 - 20:00</span>
+                        <i class="fas fa-clock"></i>
+                        <span>Sáb: 09:00 - 18:00 </span>
+                        <i class="fas fa-clock"></i>
+                        <span>Dom: 09:00 - 12:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image reveal">
+                <div class="hero-image-frame">
+                    <img src="images/exterior.jpeg" alt="Exterior da Barbearia Aritana" class="hero-img">
+                    <div class="hero-image-accent"></div>
+                </div>
+                <div class="hero-card-float">
+                    <div class="float-icon"><i class="fas fa-star"></i></div>
+                    <div>
+                        <strong class="counter" data-target="4.9" data-decimals="1">0</strong>
+                        <span>Avaliação no Google</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#sobre" class="scroll-link">
+                <span>Role para descobrir</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="section sobre" id="sobre">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Sobre nós</span>
+                <h2 class="section-title">Mais que uma barbearia,<br><span class="text-gold">um lugar para se sentir bem.</span></h2>
+            </div>
+            <div class="sobre-grid">
+                <div class="sobre-text reveal">
+                    <p class="sobre-paragraph">
+                        A Barbearia Aritana une técnica, experiência e atendimento próximo para entregar 
+                        cortes e barbas impecáveis. Aqui cada cliente recebe atenção, qualidade e uma 
+                        experiência diferenciada.
+                    </p>
+                    <p class="sobre-paragraph">
+                        Localizada na Imbiribeira, em Recife, somos referência em cortes masculinos na região, 
+                        com um ambiente pensado para o seu conforto e bem-estar.
+                    </p>
+                    <div class="sobre-features">
+                        <div class="sobre-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ambiente climatizado</span>
+                        </div>
+                        <div class="sobre-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Televisão e som ambiente</span>
+                        </div>
+                        <div class="sobre-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Videogame</span>
+                        </div>
+                        <div class="sobre-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Bebidas disponíveis</span>
+                        </div>
+                        <div class="sobre-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Atendimento familiar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-image reveal">
+                    <div class="sobre-image-frame">
+                        <img src="images/interior.png" alt="Ambiente da Barbearia Aritana">
+                        <div class="sobre-image-badge">
+                            <i class="fas fa-cut"></i>
+                            <span>Desde sempre<br>na régua</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section class="section servicos" id="servicos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Nossos serviços</span>
+                <h2 class="section-title">Cuidado completo<br><span class="text-gold">para o homem moderno</span></h2>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card reveal">
+                    <div class="servico-image">
+                        <img src="images/WhatsApp Image 2026-08-12 at 1.26.27 PM.jpeg" alt="Corte Masculino">
+                        <div class="servico-overlay"></div>
+                    </div>
+                    <div class="servico-content">
+                        <h3 class="servico-title">Corte Masculino</h3>
+                        <p class="servico-desc">Cortes modernos, clássicos e personalizados para cada estilo.</p>
+                        <a href="https://wa.me/558185542742?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20corte%20masculino%20na%20Barbearia%20Aritana." 
+                           target="_blank" rel="noopener" class="btn btn-gold btn-sm">
+                            <i class="fab fa-whatsapp"></i> Agendar
+                        </a>
+                    </div>
+                </div>
+                <div class="servico-card reveal">
+                    <div class="servico-image">
+                        <img src="images/WhatsApp Image 2026-08-12 at 1.26.28 PM.jpeg" alt="Barba">
+                        <div class="servico-overlay"></div>
+                    </div>
+                    <div class="servico-content">
+                        <h3 class="servico-title">Barba</h3>
+                        <p class="servico-desc">Acabamento preciso para deixar sua barba sempre alinhada.</p>
+                        <a href="https://wa.me/558185542742?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20servi%C3%A7o%20de%20barba%20na%20Barbearia%20Aritana." 
+                           target="_blank" rel="noopener" class="btn btn-gold btn-sm">
+                            <i class="fab fa-whatsapp"></i> Agendar
+                        </a>
+                    </div>
+                </div>
+                <div class="servico-card reveal">
+                    <div class="servico-image">
+                        <img src="images/WhatsApp Image 2026-08-12 at 1.26.28 PM (4).jpeg" alt="Corte + Barba">
+                        <div class="servico-overlay"></div>
+                    </div>
+                    <div class="servico-content">
+                        <h3 class="servico-title">Corte + Barba</h3>
+                        <p class="servico-desc">A combinação completa para renovar seu visual.</p>
+                        <a href="https://wa.me/558185542742?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20corte%20e%20barba%20na%20Barbearia%20Aritana." 
+                           target="_blank" rel="noopener" class="btn btn-gold btn-sm">
+                            <i class="fab fa-whatsapp"></i> Agendar
+                        </a>
+                    </div>
+                </div>
+                <div class="servico-card reveal">
+                    <div class="servico-image">
+                        <img src="images/WhatsApp Image 2026-08-12 at 1.26.28 PM (5).jpeg" alt="Experiência Completa">
+                        <div class="servico-overlay"></div>
+                    </div>
+                    <div class="servico-content">
+                        <h3 class="servico-title">Experiência Completa</h3>
+                        <p class="servico-desc">Um momento completo de cuidado masculino.</p>
+                        <a href="https://wa.me/558185542742?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20a%20experi%C3%AAncia%20completa%20na%20Barbearia%20Aritana." 
+                           target="_blank" rel="noopener" class="btn btn-gold btn-sm">
+                            <i class="fab fa-whatsapp"></i> Agendar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EQUIPE ===== -->
+    <section class="section equipe" id="equipe">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Nossa equipe</span>
+                <h2 class="section-title">Conheça quem<br><span class="text-gold">transforma seu visual</span></h2>
+            </div>
+            <div class="equipe-grid">
+                <div class="equipe-card reveal">
+                    <div class="equipe-photo">
+                        <img src="images/Edvan.jpeg" alt="Edvan - Barbeiro">
+                        <div class="equipe-photo-overlay">
+                            <a href="https://wa.me/558185542742?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20com%20Edvan%20na%20Barbearia%20Aritana." 
+                               target="_blank" rel="noopener" class="btn btn-gold btn-sm">
+                                <i class="fab fa-whatsapp"></i> Agendar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="equipe-info">
+                        <h3 class="equipe-name">Edvan</h3>
+                        <p class="equipe-specialty">Profissional reconhecido pelo excelente atendimento e qualidade nos cortes.</p>
+                    </div>
+                </div>
+                <div class="equipe-card reveal">
+                    <div class="equipe-photo">
+                        <img src="images/Cleiton.jpeg" alt="Cleiton - Barbeiro">
+                        <div class="equipe-photo-overlay">
+                            <a href="https://wa.me/558185542742?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20com%20Cleiton%20na%20Barbearia%20Aritana." 
+                               target="_blank" rel="noopener" class="btn btn-gold btn-sm">
+                                <i class="fab fa-whatsapp"></i> Agendar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="equipe-info">
+                        <h3 class="equipe-name">Cleiton</h3>
+                        <p class="equipe-specialty">Especialista em cortes masculinos e atendimento personalizado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIÊNCIA ARITANA ===== -->
+    <section class="section experiencia" id="experiencia">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Experiência Aritana</span>
+                <h2 class="section-title">Enquanto você cuida do visual,<br><span class="text-gold">aproveita o momento.</span></h2>
+            </div>
+            <div class="experiencia-grid">
+                <div class="experiencia-item reveal">
+                    <div class="experiencia-icon"><i class="fas fa-chair"></i></div>
+                    <h3>Ambiente confortável</h3>
+                    <p>Espaço pensado para o seu conforto do início ao fim.</p>
+                </div>
+                <div class="experiencia-item reveal">
+                    <div class="experiencia-icon"><i class="fas fa-snowflake"></i></div>
+                    <h3>Espaço climatizado</h3>
+                    <p>Climatização perfeita para você relaxar em qualquer estação.</p>
+                </div>
+                <div class="experiencia-item reveal">
+                    <div class="experiencia-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>Videogame</h3>
+                    <p>Divirta-se enquanto espera ou durante o seu atendimento.</p>
+                </div>
+                <div class="experiencia-item reveal">
+                    <div class="experiencia-icon"><i class="fas fa-tv"></i></div>
+                    <h3>Entretenimento</h3>
+                    <p>Televisão e som ambiente para uma experiência completa.</p>
+                </div>
+                <div class="experiencia-item reveal">
+                    <div class="experiencia-icon"><i class="fas fa-glass-cheers"></i></div>
+                    <h3>Bebidas</h3>
+                    <p>Bebidas disponíveis para acompanhar o seu momento.</p>
+                </div>
+                <div class="experiencia-item reveal">
+                    <div class="experiencia-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Boa conversa</h3>
+                    <p>Atendimento descontraído e amigável, como deve ser.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section class="section depoimentos" id="depoimentos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Depoimentos</span>
+                <h2 class="section-title">Quem conhece,<br><span class="text-gold">recomenda.</span></h2>
+            </div>
+
+            <div class="depoimentos-carousel reveal">
+                <div class="carousel-controls">
+                    <button class="carousel-arrow prev" aria-label="Avaliação anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-arrow next" aria-label="Próxima avaliação">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="carousel-track-wrap">
+                    <div class="depoimentos-track" id="depoimentosTrack">
+                        <article class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="depoimento-text">"Atendimento impecável e corte muito bem feito. Ambiente agradável, profissionalismo em primeiro lugar."</p>
+                            <div class="depoimento-author">
+                                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                                <span>Marcos A.</span>
+                            </div>
+                        </article>
+
+                        <article class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="depoimento-text">"Tive a melhor experiência de barbearia da região. O corte saiu na régua e o atendimento foi ótimo."</p>
+                            <div class="depoimento-author">
+                                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                                <span>João V.</span>
+                            </div>
+                        </article>
+
+                        <article class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="depoimento-text">"Profissionais muito bons, ambiente organizado e atendimento simpático. Vale muito a pena voltar."</p>
+                            <div class="depoimento-author">
+                                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                                <span>Rafael N.</span>
+                            </div>
+                        </article>
+
+                        <article class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="depoimento-text">"O ambiente é ótimo, a barbearia é bem cuidada e os serviços de corte e barba são de alta qualidade."</p>
+                            <div class="depoimento-author">
+                                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                                <span>Lucas P.</span>
+                            </div>
+                        </article>
+
+                        <article class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="depoimento-text">"OK"</p>
+                            <div class="depoimento-author">
+                                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                                <span>George Felix</span>
+                            </div>
+                            <small class="depoimento-time">7 anos atrás</small>
+                        </article>
+
+                        <article class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="depoimento-text">"Os melhores barbeiros!"</p>
+                            <div class="depoimento-author">
+                                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                                <span>Carlos Lima</span>
+                            </div>
+                            <small class="depoimento-time">7 anos atrás</small>
+                        </article>
+
+                        <article class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="depoimento-text">"Preço e trabalho excelentes."</p>
+                            <div class="depoimento-author">
+                                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                                <span>Amaro Elpidio Quirino</span>
+                            </div>
+                            <small class="depoimento-time">7 anos atrás</small>
+                        </article>
+
+                        <article class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="depoimento-text">"Lugar estilizado, climatizado e preço justo!"</p>
+                            <div class="depoimento-author">
+                                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                                <span>Patrikson Moraes Guedes</span>
+                            </div>
+                            <small class="depoimento-time">7 anos atrás</small>
+                        </article>
+
+                        <article class="depoimento-card">
+                            <div class="depoimento-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="depoimento-text">"Muito boa a barbearia."</p>
+                            <div class="depoimento-author">
+                                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                                <span>Allan Herculano</span>
+                            </div>
+                            <small class="depoimento-time">7 anos atrás</small>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="carousel-dots" aria-label="Navegação do carrossel de avaliações">
+                    <button class="carousel-dot active" data-index="0" aria-label="Ir para avaliação 1"></button>
+                    <button class="carousel-dot" data-index="1" aria-label="Ir para avaliação 2"></button>
+                    <button class="carousel-dot" data-index="2" aria-label="Ir para avaliação 3"></button>
+                    <button class="carousel-dot" data-index="3" aria-label="Ir para avaliação 4"></button>
+                    <button class="carousel-dot" data-index="4" aria-label="Ir para avaliação 5"></button>
+                    <button class="carousel-dot" data-index="5" aria-label="Ir para avaliação 6"></button>
+                    <button class="carousel-dot" data-index="6" aria-label="Ir para avaliação 7"></button>
+                    <button class="carousel-dot" data-index="7" aria-label="Ir para avaliação 8"></button>
+                    <button class="carousel-dot" data-index="8" aria-label="Ir para avaliação 9"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALERIA ===== -->
+    <section class="section galeria" id="galeria">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Galeria</span>
+                <h2 class="section-title">Nosso trabalho</h2>
+            </div>
+            <div class="galeria-grid">
+                <div class="galeria-item reveal">
+                    <img src="images/paiefilho.jpg" alt="Trabalho realizado na Barbearia Aritana">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="galeria-item reveal">
+                    <img src="images/WhatsApp Image 2026-08-12 at 1.26.27 PM.jpeg" alt="Trabalho realizado na Barbearia Aritana">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="galeria-item reveal">
+                    <img src="images/WhatsApp Image 2026-08-12 at 1.26.27 PM (1).jpeg" alt="Trabalho realizado na Barbearia Aritana">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="galeria-item reveal">
+                    <img src="images/WhatsApp Image 2026-08-12 at 1.26.27 PM (2).jpeg" alt="Trabalho realizado na Barbearia Aritana">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="galeria-item reveal">
+                    <img src="images/WhatsApp Image 2026-08-12 at 1.26.28 PM (4).jpeg" alt="Trabalho realizado na Barbearia Aritana">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="galeria-item reveal">
+                    <img src="images/WhatsApp Image 2026-08-12 at 1.26.28 PM (5).jpeg" alt="Trabalho realizado na Barbearia Aritana">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AGENDAMENTO CTA ===== -->
+    <section class="cta-agendamento" id="agendamento">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2 class="cta-title">Pronto para renovar seu visual?</h2>
+                <p class="cta-text">Escolha seu horário e venha viver a experiência Barbearia Aritana.</p>
+                <a href="https://wa.me/558185542742?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Aritana." 
+                   target="_blank" rel="noopener" class="btn btn-gold btn-xl">
+                    <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LOCALIZAÇÃO ===== -->
+    <section class="section localizacao" id="localizacao">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Localização</span>
+                <h2 class="section-title">Estamos esperando<br><span class="text-gold">por você</span></h2>
+            </div>
+            <div class="localizacao-grid">
+                <div class="localizacao-info reveal">
+                    <div class="localizacao-item">
+                        <div class="localizacao-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>R. João Murilo de Oliveira, 41 - 1<br>Imbiribeira, Recife - PE<br>CEP: 51160-230</p>
+                        </div>
+                    </div>
+                    <div class="localizacao-item">
+                        <div class="localizacao-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h3>Horário de funcionamento</h3>
+                            <ul class="horario-lista">
+                                <li><span>Terça</span><span>09:00 - 20:00</span></li>
+                                <li><span>Quarta</span><span>09:00 - 20:00</span></li>
+                                <li><span>Quinta</span><span>09:00 - 20:00</span></li>
+                                <li><span>Sexta</span><span>09:00 - 20:00</span></li>
+                                <li><span>Sábado</span><span>09:00 - 18:00</span></li>
+                                <li><span>Domingo</span><span>08:00 - 12:00</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=R.+Jo%C3%A3o+Murilo+de+Oliveira%2C+41+-+Imbiribeira%2C+Recife+-+PE" 
+                       target="_blank" rel="noopener" class="btn btn-gold">
+                        <i class="fas fa-map"></i> Abrir no Google Maps
+                    </a>
+                </div>
+                <div class="localizacao-map reveal">
+                    <iframe 
+                        src="https://www.google.com/maps?q=R.+Jo%C3%A3o+Murilo+de+Oliveira,+41+-+Imbiribeira,+Recife+-+PE&output=embed" 
+                        width="100%" height="100%" style="border:0;" 
+                        allowfullscreen="" loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Mapa - Barbearia Aritana">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INSTAGRAM ===== -->
+    <section class="section instagram" id="instagram">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Instagram</span>
+                <h2 class="section-title">Acompanhe<br><span class="text-gold">nosso trabalho</span></h2>
+            </div>
+            <div class="instagram-grid">
+                <div class="instagram-item reveal">
+                    <img src="images/interior.png" alt="Instagram Barbearia Aritana">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item reveal">
+                    <img src="images/exterior.jpeg" alt="Instagram Barbearia Aritana">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item reveal">
+                    <img src="images/WhatsApp Image 2026-08-12 at 1.26.28 PM.jpeg" alt="Instagram Barbearia Aritana">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item reveal">
+                    <img src="images/WhatsApp Image 2026-08-12 at 1.26.28 PM (5).jpeg" alt="Instagram Barbearia Aritana">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="instagram-cta reveal">
+                <a href="https://www.instagram.com/barbearia_aritana?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="btn btn-outline">
+                    <i class="fab fa-instagram"></i> Seguir no Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Barbearia Aritana" class="footer-logo">
+                    <p class="footer-desc">Barbearia moderna com raízes e personalidade pernambucana. Cortes masculinos, barba e experiência de atendimento em Recife.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Contato</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="https://wa.me/558185542742" target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/barbearia_aritana?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== target="_blank" rel="noopener">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Localização</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>R. João Murilo de Oliveira, 41 - 1<br>Imbiribeira, Recife - PE</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Horário</h3>
+                    <ul class="footer-links horario-footer">
+                        <li><i class="fas fa-clock"></i><span>ter - Sex: 09:00 - 20:00</span></li>
+                        <li><i class="fas fa-clock"></i><span>Sáb: 09:00 - 18:00</span></li>
+                        <li><i class="fas fa-clock"></i><span>Dom: 08:00 - 12:00</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Barbearia Aritana. Todos os direitos reservados.</p>
+                <p class="footer-made">Feito com <i class="fas fa-heart"></i> em Recife - PE</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== WHATSAPP FLOAT ===== -->
+    <a href="https://wa.me/558185542742?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Aritana." 
+       target="_blank" rel="noopener" class="whatsapp-float" aria-label="Agendar pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">
+            <i class="fas fa-times"></i>
+        </button>
+        <img src="" alt="Imagem ampliada" class="lightbox-img" id="lightboxImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
